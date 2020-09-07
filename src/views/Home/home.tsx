@@ -1,10 +1,8 @@
 import React from "react";
-import { Animated } from "react-animated-css";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import tab1 from "../../assets/Tab1.svg";
 import tab2 from "../../assets/Tab2.svg";
 import tab3 from "../../assets/settings.svg";
-import arrow from "../../assets/arrow-btn.svg";
 import arrowBtn from "../../assets/Group 7005.svg";
 import svg from "../../assets/svg.svg";
 import p1 from "../../assets/alexandru-acea-GhwCef9VRr4-unsplash/alexandru.png";

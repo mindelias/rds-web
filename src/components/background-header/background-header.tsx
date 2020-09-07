@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import greenStar from "../../assets/green star.svg";
 import { Center} from "../../common/mixin";
 
 interface props {

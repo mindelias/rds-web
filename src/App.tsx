@@ -4,11 +4,10 @@ import {
   Switch, // for server rendering
   Route,
 } from "react-router-dom";
-import logo from './logo.svg';
+ 
 // import './App.css';
 import "./App.scss";
 import Home from './views/Home/home';
-import Sidebar from './components/Sidebar/Sidebar';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Page1 from './views/Page1/Page1';
 import Page2 from './views/Page2/Page2';

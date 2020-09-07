@@ -1,7 +1,6 @@
 import React from "react";
 import NavWrapper from "./Sidebar.styles";
 import { useState } from "react";
-import logo from "../../assets/footer-logo.svg";
 import "../../UtilitiesClass/animations/animate.css";
 
 interface Iprops {

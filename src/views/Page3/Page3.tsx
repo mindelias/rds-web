@@ -66,7 +66,7 @@ function Page3() {
         <section className="section1-page3">
           <article className="section1-page3-article1 row align-items-center">
             <div className="col-md-6 offset-md-1 laptop-screen ">
-              <img src={Group7030} alt="laptop and phone image" />
+              <img src={Group7030} alt="" />
             </div>
             <div className="col-md-4">
               <P
@@ -155,7 +155,7 @@ function Page3() {
           </article>
           <article className="section1-page3-article3 row align-items-center">
             <div className="col-md-6 offset-md-1 laptop-screen ">
-              <img src={Group7030} alt="laptop and phone image" />
+              <img src={Group7030} alt=" " />
             </div>
             <div className="col-md-4">
               <P
