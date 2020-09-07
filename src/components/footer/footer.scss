@@ -1,0 +1,27 @@
+.footer-container {
+  background: white;
+  padding: 5rem 20rem;
+  width: 100%;
+
+  .footer {
+    border: 1px solid #dddddd;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    // height: 7rem;
+    position: relative;
+  }
+  .copy-right {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 20px;
+  }
+  .border-left {
+    position: absolute;
+    width: 1.5px;
+    background: #dddddd;
+    height: 7rem;
+    margin-right: 10px;
+    top: -30%;
+  }
+}

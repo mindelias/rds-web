@@ -1,0 +1,88 @@
+.page5 {
+  .section5-header {
+    background-image: linear-gradient(
+        106deg,
+        rgba(#3d9b3d, 0.8),
+        rgba(#3d9b3d, 0.8),
+        rgba(#3d9b3d, 0.8)
+      ),
+      url("../../assets/Subtraction\ 6/Subtraction 6.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    // background-attachment: fixed;
+    height: 90vh;
+    margin: 0 !important;
+    position: relative;
+    .text-cont {
+      // position: relative;
+      .text-inner-cont {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, 50%);
+        //   font-weight: ;
+      }
+    }
+  }
+  &-section1 {
+    padding-bottom: 10rem;
+    .desktopImage {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      margin-top: -35%;
+
+      img {
+        width: 60rem;
+      }
+    }
+    .abt-project {
+      margin-top: 22%;
+    }
+  }
+  &-section2 {
+    background-image: url("../../assets/app-screen-mockup_190445-4/app-screen-mockup_190445-4.png");
+    height: 75vh;
+    background-size: 100% 100%;
+  }
+  &-section3 {
+    background: white;
+    padding: 5rem 0rem;
+    .bgImage1 {
+      margin-right: -5rem !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-section4 {
+    background: var(--darkGray1);
+    padding: 8rem 5rem;
+    .bgImage2 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-section5 {
+    background: white;
+    padding-top: 10rem;
+    article {
+      background: var(--offWhite1);
+      // height: 50vh;
+      padding: 8rem 5rem 10rem 5rem !important;
+      // margin-right: -10rem!important;
+    }
+    .bgImage3 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-section6{
+    background: var(--offWhite1);
+    padding: 10rem 0rem;
+     
+  }
+}

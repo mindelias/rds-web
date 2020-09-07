@@ -1,0 +1,30 @@
+.laptop-screen,
+.stacked-phones {
+  img {
+    width: 100%;
+  }
+}
+
+.section1-page3 {
+  padding: 10rem 0rem;
+  width: 100%;
+  background: #fff;
+  &-article1 {
+    background-color: var(--offWhite1);
+    padding: 10rem 5rem;
+    // width: 100%;
+    margin-right: 10%;
+  }
+  &-article2 {
+    background-color: var(--offWhite1);
+    padding: 10rem 5rem;
+    // width: 100%;
+    margin: 5% 0% 0% 10%;
+  }
+  &-article3 {
+    margin: 5% 10% 0% 0%;
+    background-color: var(--offWhite1);
+    padding: 10rem 5rem;
+  }
+}
+ 

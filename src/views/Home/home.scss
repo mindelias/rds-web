@@ -1,0 +1,145 @@
+.containerd {
+  background-image: linear-gradient(
+      106deg,
+      rgba(#103469, 0.8),
+      rgba(#103469, 0.8),
+      rgba(#103469, 0.8)
+    ),
+    url("../../assets/Subtraction\ 1/Subtraction 1.png");
+  background-size: 100% 100%;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  height: 95vh;
+  margin: 0 !important;
+  position: relative;
+  .tabs {
+    img {
+      width: 12rem;
+      position: absolute;
+    }
+    .tab1 {
+      left: 36.7rem;
+      top: 12.5rem;
+    }
+    .tab2 {
+      left: 39.5rem;
+      top: 53.7rem;
+      width: 10rem;
+    }
+    .tab3 {
+      left: 102.6rem;
+      top: 19.6rem;
+    }
+  }
+  .text-cont {
+    // position: relative;
+    .text-inner-cont {
+      position: absolute;
+      left: 50%;
+      top: -13%;
+      transform: translate(-50%, 50%);
+      //   font-weight: ;
+    }
+  }
+  .curve-bg {
+    margin-top: 6rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .arrow-btn {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%, 50%);
+  }
+}
+.section1 {
+  padding: 15rem 2rem 25rem 2rem;
+  position: relative;
+  header {
+    height: 10vh;
+    background: white;
+    width: 100%;
+  }
+  .img-cont {
+    //   position: relative;
+    .p1 {
+      top: -80%;
+      position: absolute;
+      right: 9%;
+      width: 38rem;
+      z-index: 300;
+    }
+    .p2 {
+      top: -2%;
+      left: 17%;
+      z-index: 400;
+      width: 33rem;
+      position: absolute;
+    }
+  }
+}
+.section2 {
+  background: var(--offWhite1);
+  padding: 8rem 20rem 25rem 20rem;
+
+  &-text-cont {
+    position: absolute;
+    top: 40%;
+    z-index: 400;
+  }
+  .small-box:hover + &-text-cont p {
+    color: white !important;
+  }
+}
+
+.section3 {
+  width: 100%;
+  padding: 0rem 0rem 5rem 20rem;
+  background: white;
+  position: relative;
+  .inner-sect3 {
+    background: var(--offWhite1);
+    padding: 10rem 3rem;
+  }
+  .desktop {
+    position: relative;
+    .desktop-cont {
+      //  position: absolute;
+      .img1 {
+        width: 65rem;
+      }
+      .img2 {
+        width: 10rem;
+        top: 25%;
+        right: -45%;
+        position: absolute;
+      }
+    }
+  }
+  .round-btn {
+    position: absolute;
+    .btn1 {
+      left: -190%;
+    }
+  }
+  .btn2 {
+    margin-left: 20rem;
+  }
+}
+.section4 {
+  background: var(--mainGreen) 0% 0% no-repeat padding-box;
+  padding: 15rem 10rem;
+  opacity: 1;
+  width: 100%;
+  .logo-section {
+    img {
+      width: 15rem !important;
+    }
+  }
+}
+.section5 {
+  background: var(--offWhite1);
+  padding: 20rem 15rem 30rem 15rem;
+}
