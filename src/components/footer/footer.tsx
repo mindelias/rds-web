@@ -9,12 +9,12 @@ import instagram from "../../assets/instagram.svg";
 function Footer() {
   return (
     <>
-      <footer className="footer-container ">
-        <div className="footer row align-items-center">
-          <div className="col-md-3">
+      <footer className="footer-container">
+        <div className="footer row align-items-center justify-content-center">
+          <div className="col-sm-3 footer-logo">
             <img src={footerLogo} alt="footer-logo" />
           </div>
-          <div className="col-md-3 justify-self-center">
+          <div className="col-sm-3">
             <P
               name="Block G4, Moore road, yaba, Lagos, Nigeria"
               color="darkGray1 "
@@ -23,7 +23,7 @@ function Footer() {
               className="ml-1"
             ></P>
           </div>
-          <div className="col-md-3 justify-self-center">
+          <div className="col-sm-3">
             <P
               name="08130143439"
               color="darkGray1 "
@@ -38,18 +38,18 @@ function Footer() {
               weight="normal"
             ></P>
           </div>
-          <div className="col-md-1 justify-self-center">
+          <div className="col-sm-1 justify-self-center">
             <img src={twitter} alt="twitter" />
           </div>
-          <div className="col-md-1 justify-self-center">
+          <div className="col-sm-1 justify-self-center">
             <img src={instagram} alt="instagram" />
           </div>
-          <div className="col-md-1">
+          <div className="col-sm-1">
             <img src={facebook} alt="facebook" />
           </div>
         </div>
-        <div className="row copy-right">
-          <div className="col-9">
+        <div className="row copy-right justify-content-start">
+          <div className="col-4">
             <P
               name="© 2020 RDS. All rights reserved."
               color="darkGray1 "
@@ -57,7 +57,7 @@ function Footer() {
               weight="normal"
             ></P>
           </div>
-          <div className="col-2 justify-self-end">
+          <div className="col-2 offset-6">
             <P
               name="Privacy Policy."
               color="lightBlue "

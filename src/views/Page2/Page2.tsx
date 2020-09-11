@@ -24,7 +24,12 @@ function Page2() {
   return (
     <>
       <div>
-        <BackgroundHeader bgColor1="#3A98CE" bgColor2="#49ABE3" img={svg3} starImg={blueStar}>
+        <BackgroundHeader
+          bgColor1="#3A98CE"
+          bgColor2="#49ABE3"
+          img={svg3}
+          starImg={blueStar}
+        >
           <div className="text-cont3 text-center">
             <P
               color="mainWhite"
@@ -58,9 +63,9 @@ function Page2() {
             <img src={arrowBtn} alt="arrow-btn" />
           </div>
         </BackgroundHeader>
-        <section className="section2-page1 bg-white">
+        <section className="section2-page2 bg-white">
           <div className="inner-section2-page1 row justify-content-center align-items-center">
-            <div className="col-4 austin">
+            <div className=" col-lg-4 col-sm-6  austin">
               <P
                 color="darkGray1"
                 name="Who we are: "
@@ -85,7 +90,7 @@ function Page2() {
                 className="mb-"
               ></P>
             </div>
-            <div className="col-4 offset-md-1 campaignCreators">
+            <div className="col-lg-4 col-sm-5 offset-md-1 campaignCreators">
               <img src={campaignCreators} alt="campaignCreators" />
             </div>
           </div>
@@ -212,36 +217,36 @@ function Page2() {
               className="mb-5"
             ></P>{" "}
           </div>
-          <div className="logo-section mt-5">
+          <div className="logo-section text-center mt-5">
             <div className="row justify-content-center mb-5">
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={foxHub} alt="foxhub" />
               </div>
-              <div className="col-2  logo-img">
+              <div className="col-sm-2  logo-img">
                 <img src={utosia} alt="utosia" />
               </div>
-              <div className="col-2 logo-img ">
+              <div className="col-sm-2 logo-img ">
                 {" "}
                 <img src={hexLab} alt="hexLab" />
               </div>
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={codeLab} alt="codeLab logo-img" />
               </div>
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={circle} alt="circle" />
               </div>
             </div>
             <div className="row justify-content-center">
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={ideaa} alt="ideaa" />
               </div>
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={amara} alt="amara" />
               </div>
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={codeLab} alt="codeLab" />
               </div>
-              <div className="col-2 logo-img">
+              <div className="col-sm-2 logo-img">
                 <img src={asgardia} alt="asgardia" />
               </div>
             </div>
@@ -288,7 +293,7 @@ function Page2() {
           <img src={svg} alt="svg" />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

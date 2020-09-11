@@ -4,165 +4,135 @@ import "../../UtilitiesClass/animations/animate.css";
 
 interface Iprops {
   bgColor?: string;
-  children: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >;
 }
 
 const NavWrapper: React.FC<Iprops> = ({ bgColor, children }) => {
   const NavStyle = styled.div`
     header {
       width: 100%;
-      left: 0rem;
       top: 0 !important;
-      position: relative;
       transition: all 5s ease;
-      overflow-x: hidden;
+      overflow-x: hidden !important;
     }
     .navbar-closed {
-      z-index: 2000;
       background: ${bgColor ? bgColor : "transparent"};
-      position: fixed;
+      position: absolute;
       width: 100%;
       z-index: 3000;
       display: flex;
-      justify-items: space-between;
+      justify-content: space-between;
       align-items: center;
       transition: all 5s ease;
       height: 8rem;
       box-shadow: 4px 0px 2px #00000014;
-      padding: 3rem 20rem;
+      padding: 3rem 3rem 3rem 20rem;
       .navbar-brand {
         flex: 1 0 70%;
+        left: 10%;
         img {
           width: 4.8rem;
         }
       }
+      @media (max-width: 900px) {
+        padding: 3rem 3rem 3rem 10rem;
+      }
     }
-    .navigation_button {
-      background: white;
-      justify-self: end;
-      border-radius: 50%;
-      height: 4rem;
-      width: 4rem;
-      box-shadow: 2px 2px 4px grey;
-      left: 70%;
-      margin: 2rem;
-      z-index: 3000;
-      cursor: pointer;
-      transition: all 5s ease-in-out;
+    .navbar-closed.sticky {
+      position: fixed !important;
     }
-    .navigation_button.open {
-      transform: translateX(10rem);
-      border: 1px solid var(--darkGray1);
-      opacity: 0.44;
-      transition: all 5s ease;
+    .nav-button-cont {
+      flex: 1 0 30%;
+      .navigation_button {
+        background: white;
+        border-radius: 50%;
+        height: 4.5rem;
+        width: 4.5rem;
+        box-shadow: 2px 2px 4px grey;
+        z-index: 3000;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        transform: translateX(0rem);
+        @media (max-width: 576px) {
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+      .navigation_button.open {
+        transform: translateX(10rem);
+        border: 1px solid var(--darkGray1);
+        opacity: 0.44;
+        transition: transform 0.2s ease;
+      }
     }
     .cont {
       width: 100%;
       height: 100vh;
-      /* top: 0; */
-      /* right: -100%; */
+      right: -100%;
+      /* overflow-x: hidden; */
       position: fixed;
       z-index: 2000;
-      transition: all 25s ease;
-      /* animation: slideInLeft 5s ease; */
+      transition: all 5s ease;
     }
     .cont.show {
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      z-index: 1800;
-      right: 0 !important;
-      /* transition: all 5s ease; */
-      animation: slideInRight 2s ease;
+      right: 0% !important;
+      transition: all 5s ease;
     }
+
     .logo-container {
       width: 100%;
-      /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+      background-color: var(--darkGray1);
       height: 100vh;
+      opacity: 0.44;
+      position: absolute;
       right: -100%;
+      visibility: hidden;
       z-index: 1900;
-      transition: all 1s ease-in-out;
+      animation: slideInLeft 1s ease;
     }
     .logo-container.show {
-      width: 100%;
-      right: 0;
-      opacity: 0.44;
-      background-color: var(--darkGray1);
-      transition: all 1s ease-in;
-      /* height: 100vh;
-      z-index: 900; */
+      right: 0%;
+      visibility: visible;
+      animation: slideInRight 1s ease;
+      perspective: 1000;
     }
     .topnav {
-      padding: 1.5rem 2rem;
+      padding: 3.5rem;
       background: white;
       height: 100vh;
       width: 25%;
-      /* right: 3%; */
+      visibility: hidden;
+      right: 0%;
       z-index: 2000;
       display: flex;
       justify-content: start;
-      /* align-items: center; */
       position: absolute;
-      /* transform: translateX(-2rem); */
-      /* animation: moveInLeft 2s ease-in-out; */
-      transition: all 5s ease-in-out;
+      animation: moveInLeft 1.5s ease;
+      perspective: 1000;
     }
     .topnav.show {
       height: 100vh;
-      right: 0%;
-      top: 0;
-      /* transform: translateX(1rem); */
-      /* animation: moveInLeft 5s ease-in-out; */
-
-      transition: all 2s ease;
-    }
-
-    @keyframes moveInLeft {
-      0% {
-        -webkit-transform: translateX(-10rem);
-        transform: translateX(-10rem);
-        visibility: visible;
-      }
-
-      100% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-    }
-    @keyframes slideInRight {
-      0% {
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-      }
-
-      100% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
+      visibility: visible;
+      animation: slideInRight 1.4s ease;
     }
 
     .ml {
       margin-right: 10px;
     }
     .nav-linkz {
-      /* justify-content: space-between; */
+      /* visibility: hidden; */
       display: flex;
-      /* padding:5rem; */
-      width: 45%;
+      width: 100%;
       list-style: none;
-      /* align-items: center; */
       flex-direction: column;
       justify-content: center;
       font-weight: 600;
-      font-size: 20px;
+      overflow: hidden;
       li {
         margin: 4rem 0rem;
         a {
+          font-size: 25px;
           color: var(--darkGray1);
-          transition: all 0.9s ease;
+          /* transition: all 0.9s ease; */
           position: relative;
           &:hover {
             color: var(--lightOrange);
@@ -171,28 +141,29 @@ const NavWrapper: React.FC<Iprops> = ({ bgColor, children }) => {
             perspective: 3000;
             backface-visibility: hidden;
             &:after {
-              transform: translateX(50%);
+              transform: translate(0%, 5px);
+              left: 0;
               opacity: 1;
+              transition: all 0.5s ease;
             }
           }
           &:after {
             content: " ";
             position: absolute;
-            opacity: 0;
-            height: 3.3px;
+            height: 3.5px;
             bottom: 0;
-            left: 0;
-            /* transform: translateX(-30% -3px); */
-            width: 100%;
+            left: -1000%;
+            transform: translate(0%, 5px);
+            width: 105%;
             background: var(--darkGray1);
-            transition: transform 250ms;
+            transition: all 3s;
           }
         }
       }
     }
-    /* .nav-linkz.open {
-      display: block;
-    } */
+    .nav-linkz.open {
+      visibility: visible;
+    }
 
     .nav-linc {
       text-decoration: none;
@@ -207,7 +178,7 @@ const NavWrapper: React.FC<Iprops> = ({ bgColor, children }) => {
       position: relative;
       /* margin-top: 10px; */
       height: 3px;
-      width: 20px;
+      width: 2rem;
       background-color: black;
       top: 50%;
       left: 50%;
@@ -216,12 +187,15 @@ const NavWrapper: React.FC<Iprops> = ({ bgColor, children }) => {
       border-radius: 3px;
       display: inline-block;
       transition: all 0.2s ease-in-out;
+      @media (max-width: 576px) {
+        width: 1.8rem;
+      }
     }
 
     .navigation_icon::before,
     .navigation_icon::after {
       content: "";
-      width: 20px;
+      width: 2rem;
       height: 3px;
       border-radius: 3px;
       background-color: black;
@@ -230,6 +204,9 @@ const NavWrapper: React.FC<Iprops> = ({ bgColor, children }) => {
       left: 0;
       box-shadow: 0 2px 5px rgba(255, 170, 80, 0.2);
       transition: all 0.2s ease-in-out;
+      @media (max-width: 576px) {
+        width: 1.8rem;
+      }
     }
     .navigation_icon::before {
       transform: translateY(-7px);
@@ -251,7 +228,18 @@ const NavWrapper: React.FC<Iprops> = ({ bgColor, children }) => {
       background: black;
       top: 0;
     }
+    @keyframes moveInLeft {
+      0% {
+        -webkit-transform: translateX(-10rem);
+        transform: translateX(-10rem);
+        visibility: visible;
+      }
 
+      100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
     @media screen and (max-width: 768px) {
       /* .topnav {
       transition: all 0.5s ease-in;

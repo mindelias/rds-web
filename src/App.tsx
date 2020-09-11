@@ -1,25 +1,29 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch, // for server rendering
   Route,
 } from "react-router-dom";
- 
+
 // import './App.css';
 import "./App.scss";
-import Home from './views/Home/home';
+import Home from "./views/Home/home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Page1 from './views/Page1/Page1';
-import Page2 from './views/Page2/Page2';
-import Page3 from './views/Page3/Page3';
-import Page4 from './views/Page4/Page4';
-import Page5 from './views/Page5/Page5';
+import Page1 from "./views/Page1/Page1";
+import Page2 from "./views/Page2/Page2";
+import Page3 from "./views/Page3/Page3";
+import Page4 from "./views/Page4/Page4";
+import Page5 from "./views/Page5/Page5";
+import Sidebar from "./components/Sidebar/Sidebar";
+import logo from "./assets/footer-logo.svg";
 
 function App() {
   return (
     <React.Fragment>
       <Router>
+        {/* <Sidebar img={logo} /> */}
         <Switch>
+          
           <Route exact path="/">
             <Home />
           </Route>

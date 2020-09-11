@@ -215,36 +215,36 @@ function Page3() {
               className="mb-5"
             ></P>{" "}
           </div>
-          <div className="logo-section">
+          <div className="logo-section text-center">
             <div className="row justify-content-center mb-5">
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={foxHub} alt="foxhub" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={utosia} alt="utosia" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 {" "}
                 <img src={hexLab} alt="hexLab" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={codeLab} alt="codeLab" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={circle} alt="circle" />
               </div>
             </div>
             <div className="row justify-content-center">
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={ideaa} alt="ideaa" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={amara} alt="amara" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={codeLab} alt="codeLab" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={asgardia} alt="asgardia" />
               </div>
             </div>

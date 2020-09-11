@@ -8,27 +8,45 @@
     url("../../assets/Subtraction\ 1/Subtraction 1.png");
   background-size: 100% 100%;
   background-blend-mode: multiply;
+  width: 100%;
   background-attachment: fixed;
   height: 95vh;
   margin: 0 !important;
   position: relative;
+  top: 0;
+  left: 0;
   .tabs {
     img {
       width: 12rem;
       position: absolute;
+      @media (max-width: 900px) {
+        width: 10rem;
+      }
     }
     .tab1 {
-      left: 36.7rem;
+      left: 25%;
       top: 12.5rem;
+      @media (max-width: 900px) {
+        left: 10%;
+      }
     }
     .tab2 {
-      left: 39.5rem;
-      top: 53.7rem;
+      left: 27%;
+      top: 75%;
+      // top: 53.7rem;
       width: 10rem;
+      @media (max-width: 900px) {
+        top: 60%;
+        left: 15%;
+      }
     }
     .tab3 {
-      left: 102.6rem;
-      top: 19.6rem;
+      // left: 102.6rem;
+      left: 67%;
+      top: 28%;
+      @media (max-width: 992px) {
+        left: 75%;
+      }
     }
   }
   .text-cont {
@@ -38,6 +56,9 @@
       left: 50%;
       top: -13%;
       transform: translate(-50%, 50%);
+      @media (max-width: 1225px) {
+        top: 8%;
+      }
       //   font-weight: ;
     }
   }
@@ -46,6 +67,13 @@
     position: relative;
     display: flex;
     justify-content: center;
+    img {
+      max-width: 1226px;
+    }
+
+    @media (max-width: 1226px) {
+      display: none;
+    }
   }
   .arrow-btn {
     position: absolute;
@@ -57,27 +85,36 @@
 .section1 {
   padding: 15rem 2rem 25rem 2rem;
   position: relative;
-  header {
-    height: 10vh;
-    background: white;
-    width: 100%;
-  }
+
   .img-cont {
-    //   position: relative;
+    width: 100%;
+    margin-top: 0;
     .p1 {
-      top: -80%;
+      top: -50%;
       position: absolute;
-      right: 9%;
-      width: 38rem;
+      right: -5%;
+      width: 80%;
+      // width: 38rem;
       z-index: 300;
     }
     .p2 {
-      top: -2%;
-      left: 17%;
+      top: -5%;
+      left: 0%;
       z-index: 400;
-      width: 33rem;
+      width: 80%;
+      // width: 33rem;
       position: absolute;
     }
+    @media (max-width: 768px) {
+      .p1,
+      .p2 {
+        width: 50%;
+        margin-top: 3rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 5rem 3rem 40rem 3rem;
   }
 }
 .section2 {
@@ -92,6 +129,18 @@
   .small-box:hover + &-text-cont p {
     color: white !important;
   }
+  @media (max-width: 1200px) {
+    padding: 5rem;
+  }
+  @media (max-width: 768px) {
+    padding: 10rem 20rem;
+    &-text-cont {
+      top: 20%;
+    }
+  }
+  @media (max-width: 570px) {
+    padding: 10rem;
+  }
 }
 
 .section3 {
@@ -103,29 +152,45 @@
     background: var(--offWhite1);
     padding: 10rem 3rem;
   }
-  .desktop {
-    position: relative;
-    .desktop-cont {
-      //  position: absolute;
-      .img1 {
-        width: 65rem;
-      }
-      .img2 {
-        width: 10rem;
-        top: 25%;
-        right: -45%;
-        position: absolute;
-      }
+
+  .desktop-cont {
+    //  position: absolute;
+    .img1 {
+      width: 100%;
     }
   }
-  .round-btn {
-    position: absolute;
-    .btn1 {
-      left: -190%;
-    }
+
+  .btn1 {
+    margin-left: -250%;
   }
+
   .btn2 {
-    margin-left: 20rem;
+    margin-left: 0%;
+  }
+  @media (max-width: 1300px) {
+    .row {
+      margin-right: 0;
+    }
+
+    padding: 5rem 0rem 5rem 15rem;
+  }
+  @media (max-width: 992px) {
+    padding: 5rem 0rem 5rem 0rem;
+    .inner-sect3 {
+      padding: 5rem;
+    }
+    .btn1 {
+      margin-left: -50%;
+    }
+    .btn2 {
+      margin-left: 55%;
+    }
+  }
+  @media (max-width: 992px) {
+    .btn1,
+    .btn2 {
+      display: none;
+    }
   }
 }
 .section4 {
@@ -135,11 +200,21 @@
   width: 100%;
   .logo-section {
     img {
-      width: 15rem !important;
+      // width: 15rem !important;
+      width: 90%;
+      @media (max-width: 576px) {
+        width: 30%;
+      }
     }
+  }
+  @media (max-width: 576px) {
+     padding: 15rem 3rem;
   }
 }
 .section5 {
   background: var(--offWhite1);
   padding: 20rem 15rem 30rem 15rem;
+  @media (max-width: 992px) {
+     padding: 15rem 5rem;
+  }
 }

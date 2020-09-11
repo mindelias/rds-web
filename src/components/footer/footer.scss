@@ -1,20 +1,28 @@
 .footer-container {
   background: white;
-  padding: 5rem 20rem;
+  padding: 5rem 30rem;
+  
   width: 100%;
-
   .footer {
     border: 1px solid #dddddd;
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
     padding: 1.5rem;
     // height: 7rem;
     position: relative;
+    .footer-logo {
+      img {
+        width: 100%;
+        @media (max-width: 576px) {
+          width: 40%;
+
+        }
+      }
+    }
   }
   .copy-right {
-      width: 70%;
-      margin: 0 auto;
-      margin-top: 20px;
+    margin-top: 20px;
+    width: 100%;
+    // border: 1px solid #dddddd;
   }
   .border-left {
     position: absolute;
@@ -24,4 +32,12 @@
     margin-right: 10px;
     top: -30%;
   }
+  @media (max-width: 992px) {
+    padding: 5rem;
+  }
+  // @media (max-width: 576px) {
+  //   [class^="col-"]{
+  //     margin-bottom: 1.5rem;
+  //   }
+  // }
 }

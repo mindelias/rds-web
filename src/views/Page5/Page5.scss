@@ -25,20 +25,40 @@
     }
   }
   &-section1 {
-    padding-bottom: 10rem;
-    .desktopImage {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      margin-top: -35%;
-
-      img {
-        width: 60rem;
+    position: relative;
+    height: 70vh;
+    // padding-bottom: 20rem;
+    &-inner {
+      .desktopImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -80%;
+        img {
+          width: 40%;
+        }
+        @media (max-width: 780px) {
+          top: -80%;
+          img {
+            width: 50%;
+          }
+        }
+      }
+      .abt-project {
+        margin-top: 30rem;
+        @media (max-width: 780px) {
+          // margin: 20rem 0rem 5rem 0rem;
+        }
       }
     }
-    .abt-project {
-      margin-top: 22%;
+    @media (max-width: 780px) {
+      height: 60vh;
+      padding-bottom: 10rem;
+    }
+    @media (max-width: 600px) {
+      height: 30vh;
+      padding-bottom: 10rem;
     }
   }
   &-section2 {
@@ -53,6 +73,9 @@
       margin-right: -5rem !important;
       img {
         width: 100%;
+      }
+      @media (max-width: 992px) {
+        margin-right: 0rem !important;
       }
     }
   }
@@ -80,9 +103,8 @@
       }
     }
   }
-  &-section6{
+  &-section6 {
     background: var(--offWhite1);
     padding: 10rem 0rem;
-     
   }
 }

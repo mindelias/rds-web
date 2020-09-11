@@ -1,11 +1,14 @@
-import  { css } from "styled-components";
-
+import { css } from "styled-components";
 
 export const Center = css`
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media (max-width: 576px) {
+    top: 20%;
+    transform: translate(-50%, -20%);
+  }
 `;
 export const CenterPartial = css`
   position: absolute;

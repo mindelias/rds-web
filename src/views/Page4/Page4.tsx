@@ -11,7 +11,7 @@ import "./Page4.scss";
 function Page4() {
   return (
     <>
-      <Sidebar bgColor="white" img={coloredLogo}/>
+      <Sidebar bgColor="white" img1={coloredLogo} img2={coloredLogo}/>
       <div>
         <section className="section1-page4">
           <div className="row align-items-center justify-content-center ">

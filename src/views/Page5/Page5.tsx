@@ -46,39 +46,41 @@ function Page5() {
             </div>
           </div>
         </header>
-        <section className="page5-section1">
-          <div className="desktopImage">
-            <img src={desktopImage} alt="" />
-          </div>
-          <div className="row justify-content-center abt-project">
-            <div className="col-2">
-              <P
-                color="darkGray1"
-                name="ABOUT THE PROJECT"
-                size="1.2rem"
-                weight="bold"
-                className="mb-3"
-                lineHeight={1.5}
-                letterSpacing="5px"
-              ></P>
-              <P
-                color="darkGray1"
-                name="Quiere la boca    "
-                size="1.2rem"
-                weight="normal"
-                className="mb-3"
-                lineHeight={1.5}
-              ></P>
+        <section className="page5-section1 text-center">
+          <div className="page5-section1-inner">
+            <div className="desktopImage">
+              <img src={desktopImage} alt="" />
             </div>
-            <div className="col-4">
-              <P
-                color="darkGray1"
-                name="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to"
-                size="1.3rem"
-                weight="normal"
-                className="mb-3"
-                lineHeight={1.5}
-              ></P>
+            <div className="row justify-content-center abt-project">
+              <div className="col-sm-4">
+                <P
+                  color="darkGray1"
+                  name="ABOUT THE PROJECT"
+                  size="1.2rem"
+                  weight="bold"
+                  className="mb-3"
+                  lineHeight={1.5}
+                  letterSpacing="5px"
+                ></P>
+                <P
+                  color="darkGray1"
+                  name="Quiere la boca    "
+                  size="1.2rem"
+                  weight="normal"
+                  className="mb-3"
+                  lineHeight={1.5}
+                ></P>
+              </div>
+              <div className="col-sm-4">
+                <P
+                  color="darkGray1"
+                  name="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to"
+                  size="1.3rem"
+                  weight="normal"
+                  className="mb-3"
+                  lineHeight={1.5}
+                ></P>
+              </div>
             </div>
           </div>
         </section>

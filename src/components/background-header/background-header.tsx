@@ -45,13 +45,17 @@ const BackgroundHeader: React.FC<props> = ({
       flex-basis: 1 0 25%;
       height: 100%;
       width: 25%;
-      .star-img{
-        z-index:100;
-        position:absolute;
+      .star-img {
+        width:53%;
+        z-index: 100;
+        position: absolute;
         left: -4%;
-        top:5%;
-        img{
-          width:55%;
+        top: 5%;
+        img {
+          width: 55%;
+        }
+        @media (max-width: 992px) {
+          width: 50%;
         }
       }
     }
@@ -83,6 +87,9 @@ const BackgroundHeader: React.FC<props> = ({
       position: absolute;
       left: 50%;
       bottom: 5%;
+      transform: translate(-50%, 5%);
+      @media (max-width: 992px) {
+      }
     }
   `;
   return (

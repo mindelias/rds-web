@@ -31,9 +31,13 @@ const P: React.FC<props> = ({
     color: var(--${color});
     line-height: ${lineHeight ? lineHeight : 1.1};
     font-weight: ${weight};
-    letter-spacing:${letterSpacing?letterSpacing:'2px'};
+    letter-spacing: ${letterSpacing ? letterSpacing : "2px"};
     opacity: ${opacity ? opacity : 1};
+
     font-family: ${family ? family : 'font-family: "Roboto", sans-serif'};
+    @media (max-width: 992px) {
+       
+    }
   `;
   return (
     <ParagraphCont className={className}>

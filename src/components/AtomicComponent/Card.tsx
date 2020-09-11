@@ -13,7 +13,7 @@ const Cards: React.FC<props> = (props) => {
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 40px #00000014;
     opacity: 1;
-    width: 15rem;
+    width: 100%;
     height: 40rem;
     text-align: left;
     padding: 10rem 5rem;

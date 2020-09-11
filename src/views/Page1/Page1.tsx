@@ -22,7 +22,12 @@ function Page1() {
   return (
     <>
       <div>
-        <BackgroundHeader bgColor1="#eb692a" bgColor2="#e1421a" img={svg2} starImg={orangeStar}>
+        <BackgroundHeader
+          bgColor1="#eb692a"
+          bgColor2="#e1421a"
+          img={svg2}
+          starImg={orangeStar}
+        >
           <div className="text-cont3 text-center">
             <P
               color="mainWhite"
@@ -56,7 +61,7 @@ function Page1() {
             <img src={arrowBtn} alt="arrow-btn" />
           </div>
         </BackgroundHeader>
-        <section className="section1">
+        <section className="page1-section1">
           <div className="text-center">
             <P
               color="darkGray1"
@@ -84,10 +89,10 @@ function Page1() {
         </section>
         <section className="section2-page1">
           <div className="inner-section2-page1 row justify-content-center">
-            <div className="col-4 austin">
+            <div className="col-sm-4 austin">
               <img src={austin} alt="austin" />
             </div>
-            <div className="col-6 offset-md-1">
+            <div className="col-sm-6 offset-md-1">
               <P
                 color="darkOrange"
                 name="We bring your amazing "
@@ -227,36 +232,36 @@ function Page1() {
               className="mb-5"
             ></P>{" "}
           </div>
-          <div className="logo-section">
+          <div className="logo-section text-center">
             <div className="row justify-content-center mb-5">
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={foxHub} alt="foxhub" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={utosia} alt="utosia" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 {" "}
                 <img src={hexLab} alt="hexLab" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={codeLab} alt="codeLab" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={circle} alt="circle" />
               </div>
             </div>
             <div className="row justify-content-center">
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={ideaa} alt="ideaa" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={amara} alt="amara" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={codeLab} alt="codeLab" />
               </div>
-              <div className="col-2">
+              <div className="col-sm-2">
                 <img src={asgardia} alt="asgardia" />
               </div>
             </div>
